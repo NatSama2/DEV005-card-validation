@@ -1,30 +1,24 @@
 const validator = {
-  isValid: function (cardNumber) {
-    //Numero de tarjeta toma el valos del input
-    let tarjetaVacia = " ";
+  isValid: function (cardNumber) {  
 
-    document
-      .getElementById("NumeroTarjeta")
-      .addEventListener("input", function (e) {
-        tarjetaVacia = e.target.value;
-      });
+    //revertir numero
+    var str = cardNumber;
+    var strReverse = str.split('').reverse().join('')
 
-    //Trasformar número en array
-    const myArr = String(tarjetaVacia)
-      .split("")
-      .map((tarjetaVacia) => {
-        return Number(tarjetaVacia);
-      });
-
+    //transformar string en array
+    const cadena = strReverse;
+    let array = cadena.split('');
+    console.log('reversa', array);
     
-  }, 
-};
+    //multiplicar x2 numeros en posicion pares
+    let pares = [0,0]
+    for (let i = 0 ; array.length; i++) {
+      if ((i+1) %2 ===0) {
+        pares = pares*2
+        console.log (pares)
+      }
+    }    
 
-document.getElementById("Confirmar").addEventListener("click", function () {
-  document.getElementById("saludo").innerHTML =
-    "¡Hola " + tarjetaVacia + ", para comenzar selecciona el nivel.";
-});
 
-
-
-export default validator;
+  }
+}; export default validator;

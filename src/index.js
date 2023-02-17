@@ -2,6 +2,18 @@ import validator from './validator.js';
 
 console.log(validator);
 
+//Guardar lo que diga en el input
+let tarjetaVacia = " ";
+
+document.getElementById('NumeroTarjeta')
+  .addEventListener('input', function (e) {
+    tarjetaVacia = e.target.value;
+    validator.isValid (tarjetaVacia);
+  });
+
+  console.log (array);
+
+
 /*
 function muestraAlerta() {
     if (checked="none") {
@@ -12,24 +24,3 @@ function muestraAlerta() {
     }
 
 }*/
-
-
-
-/*
-document.getElementById("Confirmar").addEventListener("click", function() {
-
-}
- */
-
-//Numero de tarjeta toma el valos del input
-let tarjetaVacia = " " ;
-
-document.getElementById("NumeroTarjeta").addEventListener("input", function (e) {
-  tarjetaVacia = e.target.value;
-});
-
-document.getElementById("Confirmar").addEventListener("click", function() {
-  document.getElementById("saludo").innerHTML =
-    "¡Hola " + tarjetaVacia + ", para comenzar selecciona el nivel.";
-});
-
