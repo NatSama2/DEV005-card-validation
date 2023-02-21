@@ -11,7 +11,7 @@ document.getElementById('NumeroTarjeta')
     validator.isValid (tarjetaVacia);
   });
 
-  console.log (array);
+  
 
 
 /*
