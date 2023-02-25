@@ -51,6 +51,35 @@ h3 {
     margin-left: 46%;   
 }
 
+#Confirmar {
+    box-shadow:inset 0px 1px 0px 0px #fff6af;
+    background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color:#ffec64;
+    border-radius:11px;
+    border:1px solid #ffaa22;
+    display:inline-block;
+    cursor:pointer;
+    color:#333333;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffee66;
+    margin-left: 31%; 
+    margin-top: 5%;
+
+}
+
+#cvv {
+    width: 20%;
+}
+
+#IngresarNombre, #NumeroTarjeta, #cvv, #SelectMes, #SelectAño {
+    background-color: #3CBC8D;
+    color: white;
+    border-radius: 11px;
+} 
  
 #datos {
     text-align: center;
@@ -62,5 +91,11 @@ h3 {
 }
 
 #finalizado {
-    despues bloquear
+    display: none;
+}
+
+#formulario {
+    display: block;
+    display: flex;
+    justify-content: center;
 }

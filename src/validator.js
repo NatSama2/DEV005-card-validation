@@ -32,12 +32,13 @@ const validator = {
           console.log ('suma', sum); */
         }
         else {
-          multiplicacion;
+          array[i] = multiplicacion;
         }       
       }
       console.log ('nuevo array',parseInt(array[i]))      
     }
      //sumar todos los numeros
+     console.log ('array a sumar', array)
     for(let i = 0; i< array.length; i++) {
       sumaDeNumeros += parseInt(array[i])
 
@@ -55,4 +56,5 @@ const validator = {
 
 
   }
-}; export default validator;
+};
+ export default validator;
