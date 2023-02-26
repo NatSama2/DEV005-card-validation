@@ -15,12 +15,12 @@
     </header> 
 
 <div id="formulario"> 
-  <form> 
+  <form id="form"> 
     <input type="text" id="IngresarNombre" placeholder="Ingrese Nombre" pattern="[a-zA-Z]+" required="required">
     <br>
     <input type="text" id="NumeroTarjeta" placeholder="Numero de Tarjeta" maxlength="16" pattern="[0-9]+" required="required">
     <br>
-    <select name="Mes" id="selectMes" required="required">
+    <select name="Mes" id="selectMes" class="selector" required="required">
       <option disabled selected>Mes</option>
       <option value="1">1</option>
       <option value="2">2</option>
@@ -36,7 +36,7 @@
       <option value="12">12</option>
 
     </select>
-    <select name="Año" id="selectAño" required="required">
+    <select name="Año" id="selectAño" class="selector" required="required">
       <option disabled selected>Año</option>
       <option value="2022">2022</option>
       <option value="2023">2023</option>

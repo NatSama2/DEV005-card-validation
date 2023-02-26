@@ -12,7 +12,10 @@ h1 {
 }
 
 h2 {
-    color: rgb(34, 184, 34);
+    color: rgb(184, 34, 134);
+    font-size: 30px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px rgb(252, 237, 25);
 }
 
 h3 {
@@ -67,7 +70,8 @@ h3 {
     text-decoration:none;
     text-shadow:0px 1px 0px #ffee66;
     margin-left: 31%; 
-    margin-top: 5%;
+    margin-top: 10%;
+    margin-bottom: 7%;
 
 }
 
@@ -75,11 +79,31 @@ h3 {
     width: 20%;
 }
 
-#IngresarNombre, #NumeroTarjeta, #cvv, #SelectMes, #SelectAño {
+#IngresarNombre, #NumeroTarjeta {
+    width: 80%;
+}
+
+#IngresarNombre, #NumeroTarjeta, #cvv{
     background-color: #3CBC8D;
     color: white;
-    border-radius: 11px;
+    border-radius: 8px;
+    margin-top: 4%;
+    height: 30px;
+    font-size: 20px
 } 
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.692);
+}
+
+.selector {
+    background-color: #3CBC8D;
+    color: white;
+    border-radius: 8px;
+    margin-top: 4%;
+    height: 30px;
+    font-size: 20px
+}
  
 #datos {
     text-align: center;
@@ -98,4 +122,9 @@ h3 {
     display: block;
     display: flex;
     justify-content: center;
+    border-style:double;
+    border-color: #ffaa22;
+    border-width: 10px;
+    margin-left: 20%;
+    margin-right: 20%;    
 }
