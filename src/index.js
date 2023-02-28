@@ -28,24 +28,15 @@ input.addEventListener("input", (event) => {
 
 //boton confirmar
 document.getElementById("Confirmar").addEventListener("click", function (e) {
-  e.preventDefault();
-  input.value = maskify(auxiliar);
-  if (valid(tarjetaVacia) === true) {
-    document.getElementById("finalizado").style.display = "block";
-    document.getElementById("formulario").style.display = "none";
-  } else {
-    alert("Número de Tarjeta Invalido");
+  const form = document.querySelector("form");
+  if (form.checkValidity()) {
+    e.preventDefault();
+    input.value = maskify(auxiliar);
+    if (valid(tarjetaVacia) === true) {
+      document.getElementById("finalizado").style.display = "block";
+      document.getElementById("formulario").style.display = "none";
+    } else {
+      alert("Número de Tarjeta Invalido");
+    }
   }
 });
-
-//input Nombre
-let name = "";
-document
-  .getElementById("IngresarNombre")
-  .addEventListener("input", function (e) {
-    name = e.target.value;
-    if (name === "") {
-      document.getElementById("Nombre").innerHTML =
-        "Por favor complete este campo";
-    }
-  });
